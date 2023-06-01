@@ -261,7 +261,7 @@ function App() {
       <h1>Dropdown Example</h1>
       <div>
         <label>State:</label>
-        <select value={selectedState} onChange={handleStateChange}>
+        <select id="state" value={selectedState} onChange={handleStateChange}>
           <option value="">Select a state</option>
           {getStateOptions()}
         </select>
@@ -269,7 +269,7 @@ function App() {
       {selectedState && (
         <div>
           <label>City:</label>
-          <select value={selectedCity} onChange={handleCityChange}>
+          <select id="city" value={selectedCity} onChange={handleCityChange}>
             <option value="">Select a city</option>
             {getCityOptions()}
           </select>
@@ -278,7 +278,7 @@ function App() {
       {selectedCity && (
         <div>
           <label>Landmark:</label>
-          <select value={selectedLandmark} onChange={handleLandmarkChange}>
+          <select id="landmark" value={selectedLandmark} onChange={handleLandmarkChange}>
             <option value="">Select a landmark</option>
             {getLandmarkOptions()}
           </select>
