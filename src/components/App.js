@@ -262,7 +262,7 @@ function App() {
       <div>
         <label>State:</label>
         <select id="state" value={selectedState} onChange={handleStateChange}>
-          <option value="">Select a state</option>
+          {/* <option value="">Select a state</option> */}
           {getStateOptions()}
         </select>
       </div>
@@ -270,7 +270,7 @@ function App() {
         <div>
           <label>City:</label>
           <select id="city" value={selectedCity} onChange={handleCityChange}>
-            <option value="">Select a city</option>
+            {/* <option value="">Select a city</option> */}
             {getCityOptions()}
           </select>
         </div>
@@ -279,7 +279,7 @@ function App() {
         <div>
           <label>Landmark:</label>
           <select id="landmark" value={selectedLandmark} onChange={handleLandmarkChange}>
-            <option value="">Select a landmark</option>
+            {/* <option value="">Select a landmark</option> */}
             {getLandmarkOptions()}
           </select>
         </div>
@@ -292,7 +292,7 @@ function App() {
           <p>Landmark: {selectedLandmark}</p>
         </div>
       )}
-    </div>
+    </div> 
   );
 }
 
